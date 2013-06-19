@@ -38,7 +38,6 @@ var reviewsAreUnevenlyDistributed = function () {
 
 do {
 	determineReviews();
-	console.log('unfair review distribution trying again...');
 } while (reviewsAreUnevenlyDistributed());
 	
 _.each(people, function (p) {
