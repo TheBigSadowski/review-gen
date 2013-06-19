@@ -52,3 +52,5 @@ However, if our team is more complex, and we have many reporting structures in p
     ]
 
 This would exclude Westley from reviewing Inigo and would exclude Prince Humperdink from writing reviews for Count Rugen and Fezzik. Other than that, the selections will be random.
+
+It is important to note that managers should be defined in the list first, since they are referred to in construction of the other people. However, this will not change how reviews are assigned, since we shuffle the list before starting to assign reviews anyway.
