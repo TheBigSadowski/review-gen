@@ -22,12 +22,11 @@ var determineReviews = function () {
 
 	_.chain(people).shuffle().each(function (person) {
 		_.chain(people)
-			.reject(function (p) { return p == person || p == person.manager; })
+			.reject(function (p) { return p == person || p == person.manager || p.reviews.length == numberOfReviews; })
 			.shuffle()
-			.sortBy(function (p) { return p.reviews.length; }) // try to evenly distribute the reviews
 			.first(numberOfReviews)
 			.each(function (p) { p.reviews.push(person); });
-	});	
+	});
 };
 
 var reviewsAreUnevenlyDistributed = function () {
