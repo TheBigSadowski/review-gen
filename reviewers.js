@@ -1,6 +1,6 @@
 var _ = require('underscore');
 
-var 
+var people = [
 	joe = { name: 'joe' },
 	dennis = { name: 'dennis', manager: joe },
 	ryan = { name: 'ryan', manager: joe },
@@ -12,21 +12,7 @@ var
 	avneet = { name: 'avneet' },
 	michael = { name: 'michael' },
 	bai = { name: 'bai', manager: brian },
-	jack = { name: 'jack', manager: brian };
-
-var people = [
-	joe,
-	dennis,
-	ryan,
-	boris,
-	brian,
-	patrick,
-	dmitriy,
-	avneet,
-	michael,
-	kiran,
-	bai,
-	jack
+	jack = { name: 'jack', manager: brian }
 ];
 
 _(people).each(function (person) {
