@@ -36,7 +36,7 @@ Here is a basic `people` array:
         fezzik = { name: 'Fezzik' },
         inigo = { name: 'Inigo Montoya' },
         vizzini = { name: 'Vizzini' }
-    ]
+    ];
 
 This creates a team of 6 with no reporting structures between any of them. In this setup, the code will not exclude anyone from writing anyone else's review.
 
@@ -49,7 +49,7 @@ However, if our team is more complex, and we have many reporting structures in p
         fezzik = { name: 'Fezzik', manager: humperdink },
         inigo = { name: 'Inigo Montoya', manager: westley },
         vizzini = { name: 'Vizzini' }
-    ]
+    ];
 
 This would exclude Westley from reviewing Inigo and would exclude Prince Humperdink from writing reviews for Count Rugen and Fezzik. Other than that, the selections will be random.
 
